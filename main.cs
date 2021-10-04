@@ -24,6 +24,17 @@ class MainClass
 		Console.WriteLine($"\nDisaster #2 - Sharknado \n\nHoly Toledo, Batman, is that a Sharknado forming in the distance?\nIt looks like there is at least {firstSharknado.numOfSharks} sharks in the waterspout.\nAs long as the wind force doesn't reach {firstSharknado.windForce} mph then we won't have a Sharknado.");
 
 		Console.WriteLine($"\nOh no the wind has increased up to {secondSharknado.windForce} mph and there is now {secondSharknado.numOfSharks} sharks, which makes this one of the worst Sharknados I've ever seen!");
+
+
+		Virus firstVirus = new Virus();
+		firstVirus.deathRate = 0.1;
+		firstVirus.populationEffected = 100000;
+		Virus secondVirus = new Virus();
+		secondVirus.deathRate = 0.2;
+		secondVirus.populationEffected = 1600000000;
+
+		Console.WriteLine($"\nDisaster #3 - Virus Outbreak \n\nIn today's breaking news, there is a new virus with a deathrate of {firstVirus.deathRate} and it has effected at least {firstVirus.populationEffected} people.");
+		Console.WriteLine($"\nThe new virus has mutated to become more deadly with a deathrate of {secondVirus.deathRate} and it has effected more people with {secondVirus.populationEffected} effected as of right now.");
 		
     
   }
